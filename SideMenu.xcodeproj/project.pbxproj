@@ -25,14 +25,13 @@
 		BE0F08451C29FFE900509B0F /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F082B1C29FFE900509B0F /* ImageManager.m */; };
 		BE0F08461C29FFE900509B0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0F082C1C29FFE900509B0F /* Info.plist */; };
 		BE0F08471C29FFE900509B0F /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F082E1C29FFE900509B0F /* iToast.m */; };
-		BE0F08481C29FFE900509B0F /* CobaltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08331C29FFE900509B0F /* CobaltTests.m */; };
-		BE0F08491C29FFE900509B0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08341C29FFE900509B0F /* Info.plist */; };
 		BE0F084A1C29FFE900509B0F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08351C29FFE900509B0F /* LICENSE */; };
 		BE0F08581C2A00B500509B0F /* common in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08561C2A00B500509B0F /* common */; };
 		BE0F08591C2A00B500509B0F /* platform in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08571C2A00B500509B0F /* platform */; };
+		BE0F085E1C2A048500509B0F /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085B1C2A048500509B0F /* DefaultViewController.m */; };
+		BE0F085F1C2A048500509B0F /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085D1C2A048500509B0F /* SideMenuViewController.m */; };
 		BEFE12C61C29FC60006FF4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C51C29FC60006FF4C7 /* main.m */; };
 		BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */; };
-		BEFE12CC1C29FC60006FF4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12CB1C29FC60006FF4C7 /* ViewController.m */; };
 		BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */; };
 		BEFE12D11C29FC60006FF4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12D01C29FC60006FF4C7 /* Assets.xcassets */; };
 		BEFE12D41C29FC60006FF4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12D21C29FC60006FF4C7 /* LaunchScreen.storyboard */; };
@@ -105,17 +104,17 @@
 		BE0F082D1C29FFE900509B0F /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
 		BE0F082E1C29FFE900509B0F /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
 		BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Cobalt.xcodeproj; sourceTree = "<group>"; };
-		BE0F08331C29FFE900509B0F /* CobaltTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltTests.m; sourceTree = "<group>"; };
-		BE0F08341C29FFE900509B0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE0F08351C29FFE900509B0F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BE0F08561C2A00B500509B0F /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = www/common; sourceTree = "<group>"; };
 		BE0F08571C2A00B500509B0F /* platform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = platform; path = www/platform; sourceTree = "<group>"; };
+		BE0F085A1C2A048500509B0F /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
+		BE0F085B1C2A048500509B0F /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		BE0F085C1C2A048500509B0F /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
+		BE0F085D1C2A048500509B0F /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		BEFE12C11C29FC60006FF4C7 /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE12C51C29FC60006FF4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEFE12C71C29FC60006FF4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BEFE12CA1C29FC60006FF4C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEFE12CB1C29FC60006FF4C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BEFE12CE1C29FC60006FF4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEFE12D01C29FC60006FF4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEFE12D31C29FC60006FF4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -168,7 +167,6 @@
 				BE0F080D1C29FFE900509B0F /* .gitignore */,
 				BE0F080E1C29FFE900509B0F /* Cobalt */,
 				BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */,
-				BE0F08321C29FFE900509B0F /* CobaltTests */,
 				BE0F08351C29FFE900509B0F /* LICENSE */,
 			);
 			path = Cobalt;
@@ -220,15 +218,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BE0F08321C29FFE900509B0F /* CobaltTests */ = {
-			isa = PBXGroup;
-			children = (
-				BE0F08331C29FFE900509B0F /* CobaltTests.m */,
-				BE0F08341C29FFE900509B0F /* Info.plist */,
-			);
-			path = CobaltTests;
-			sourceTree = "<group>";
-		};
 		BE0F08521C2A005F00509B0F /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,8 +240,10 @@
 		BE0F08541C2A008400509B0F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BEFE12CA1C29FC60006FF4C7 /* ViewController.h */,
-				BEFE12CB1C29FC60006FF4C7 /* ViewController.m */,
+				BE0F085C1C2A048500509B0F /* SideMenuViewController.h */,
+				BE0F085D1C2A048500509B0F /* SideMenuViewController.m */,
+				BE0F085A1C2A048500509B0F /* DefaultViewController.h */,
+				BE0F085B1C2A048500509B0F /* DefaultViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -463,7 +454,6 @@
 				BE0F084A1C29FFE900509B0F /* LICENSE in Resources */,
 				BE0F08431C29FFE900509B0F /* CobaltViewController.xib in Resources */,
 				BEFE12D11C29FC60006FF4C7 /* Assets.xcassets in Resources */,
-				BE0F08491C29FFE900509B0F /* Info.plist in Resources */,
 				BE0F08461C29FFE900509B0F /* Info.plist in Resources */,
 				BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */,
 				BE0F08591C2A00B500509B0F /* platform in Resources */,
@@ -491,12 +481,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFE12CC1C29FC60006FF4C7 /* ViewController.m in Sources */,
 				BE0F083D1C29FFE900509B0F /* CobaltBarButtonItem.m in Sources */,
 				BE0F083E1C29FFE900509B0F /* CobaltButton.m in Sources */,
 				BE0F08401C29FFE900509B0F /* CobaltPluginManager.m in Sources */,
-				BE0F08481C29FFE900509B0F /* CobaltTests.m in Sources */,
+				BE0F085F1C2A048500509B0F /* SideMenuViewController.m in Sources */,
 				BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */,
+				BE0F085E1C2A048500509B0F /* DefaultViewController.m in Sources */,
 				BE0F08421C29FFE900509B0F /* CobaltViewController.m in Sources */,
 				BE0F083F1C29FFE900509B0F /* CobaltFontManager.m in Sources */,
 				BE0F08451C29FFE900509B0F /* ImageManager.m in Sources */,

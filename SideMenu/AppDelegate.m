@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 
+#import "SideMenuViewController.h"
+
+#import "Cobalt.h"
+
 @interface AppDelegate ()
 
 @end
@@ -17,6 +21,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    NSString *resourcePath = [NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath], @"/common/"];
+    [Cobalt setResourcePath:resourcePath];
+    
+    SideMenuViewController *viewController = [[SideMenuViewController alloc] init];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = viewController;
+    self.window.backgroundColor = [UIColor clearColor];
+    [self.window makeKeyAndVisible];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kOnAppStarted object:nil];
+    
     return YES;
 }
 
@@ -28,10 +43,14 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kOnAppBackgroundNotification object:nil];
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:kOnAppForegroundNotification object:nil];
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
