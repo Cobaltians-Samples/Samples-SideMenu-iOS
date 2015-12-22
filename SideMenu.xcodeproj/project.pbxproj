@@ -1,0 +1,766 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE0F08361C29FFE900509B0F /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = BE0F080D1C29FFE900509B0F /* .gitignore */; };
+		BE0F08371C29FFE900509B0F /* BackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08101C29FFE900509B0F /* BackBarButtonItem.m */; };
+		BE0F08381C29FFE900509B0F /* backButton.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08111C29FFE900509B0F /* backButton.png */; };
+		BE0F08391C29FFE900509B0F /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08121C29FFE900509B0F /* backButton@2x.png */; };
+		BE0F083A1C29FFE900509B0F /* backButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08131C29FFE900509B0F /* backButton@3x.png */; };
+		BE0F083B1C29FFE900509B0F /* Cobalt.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08161C29FFE900509B0F /* Cobalt.m */; };
+		BE0F083C1C29FFE900509B0F /* CobaltAbstractPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08181C29FFE900509B0F /* CobaltAbstractPlugin.m */; };
+		BE0F083D1C29FFE900509B0F /* CobaltBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F081A1C29FFE900509B0F /* CobaltBarButtonItem.m */; };
+		BE0F083E1C29FFE900509B0F /* CobaltButton.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F081C1C29FFE900509B0F /* CobaltButton.m */; };
+		BE0F083F1C29FFE900509B0F /* CobaltFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F081F1C29FFE900509B0F /* CobaltFontManager.m */; };
+		BE0F08401C29FFE900509B0F /* CobaltPluginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08211C29FFE900509B0F /* CobaltPluginManager.m */; };
+		BE0F08411C29FFE900509B0F /* CobaltToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08231C29FFE900509B0F /* CobaltToast.m */; };
+		BE0F08421C29FFE900509B0F /* CobaltViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08251C29FFE900509B0F /* CobaltViewController.m */; };
+		BE0F08431C29FFE900509B0F /* CobaltViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08261C29FFE900509B0F /* CobaltViewController.xib */; };
+		BE0F08441C29FFE900509B0F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08271C29FFE900509B0F /* Localizable.strings */; };
+		BE0F08451C29FFE900509B0F /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F082B1C29FFE900509B0F /* ImageManager.m */; };
+		BE0F08461C29FFE900509B0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0F082C1C29FFE900509B0F /* Info.plist */; };
+		BE0F08471C29FFE900509B0F /* iToast.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F082E1C29FFE900509B0F /* iToast.m */; };
+		BE0F08481C29FFE900509B0F /* CobaltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F08331C29FFE900509B0F /* CobaltTests.m */; };
+		BE0F08491C29FFE900509B0F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08341C29FFE900509B0F /* Info.plist */; };
+		BE0F084A1C29FFE900509B0F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08351C29FFE900509B0F /* LICENSE */; };
+		BE0F08581C2A00B500509B0F /* common in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08561C2A00B500509B0F /* common */; };
+		BE0F08591C2A00B500509B0F /* platform in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08571C2A00B500509B0F /* platform */; };
+		BEFE12C61C29FC60006FF4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C51C29FC60006FF4C7 /* main.m */; };
+		BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */; };
+		BEFE12CC1C29FC60006FF4C7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12CB1C29FC60006FF4C7 /* ViewController.m */; };
+		BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */; };
+		BEFE12D11C29FC60006FF4C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12D01C29FC60006FF4C7 /* Assets.xcassets */; };
+		BEFE12D41C29FC60006FF4C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12D21C29FC60006FF4C7 /* LaunchScreen.storyboard */; };
+		BEFE12DF1C29FC60006FF4C7 /* SideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12DE1C29FC60006FF4C7 /* SideMenuTests.m */; };
+		BEFE12EA1C29FC60006FF4C7 /* SideMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12E91C29FC60006FF4C7 /* SideMenuUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE0F084D1C29FFE900509B0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE1ABE021B71105C0070657C;
+			remoteInfo = Cobalt;
+		};
+		BE0F084F1C29FFE900509B0F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BE1ABE0D1B71105D0070657C;
+			remoteInfo = CobaltTests;
+		};
+		BEFE12DB1C29FC60006FF4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFE12B91C29FC60006FF4C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFE12C01C29FC60006FF4C7;
+			remoteInfo = SideMenu;
+		};
+		BEFE12E61C29FC60006FF4C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFE12B91C29FC60006FF4C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFE12C01C29FC60006FF4C7;
+			remoteInfo = SideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE0F080D1C29FFE900509B0F /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		BE0F080F1C29FFE900509B0F /* BackBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackBarButtonItem.h; sourceTree = "<group>"; };
+		BE0F08101C29FFE900509B0F /* BackBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackBarButtonItem.m; sourceTree = "<group>"; };
+		BE0F08111C29FFE900509B0F /* backButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backButton.png; sourceTree = "<group>"; };
+		BE0F08121C29FFE900509B0F /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
+		BE0F08131C29FFE900509B0F /* backButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@3x.png"; sourceTree = "<group>"; };
+		BE0F08141C29FFE900509B0F /* Cobalt-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cobalt-Prefix.pch"; sourceTree = "<group>"; };
+		BE0F08151C29FFE900509B0F /* Cobalt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cobalt.h; sourceTree = "<group>"; };
+		BE0F08161C29FFE900509B0F /* Cobalt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cobalt.m; sourceTree = "<group>"; };
+		BE0F08171C29FFE900509B0F /* CobaltAbstractPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltAbstractPlugin.h; sourceTree = "<group>"; };
+		BE0F08181C29FFE900509B0F /* CobaltAbstractPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltAbstractPlugin.m; sourceTree = "<group>"; };
+		BE0F08191C29FFE900509B0F /* CobaltBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltBarButtonItem.h; sourceTree = "<group>"; };
+		BE0F081A1C29FFE900509B0F /* CobaltBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltBarButtonItem.m; sourceTree = "<group>"; };
+		BE0F081B1C29FFE900509B0F /* CobaltButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltButton.h; sourceTree = "<group>"; };
+		BE0F081C1C29FFE900509B0F /* CobaltButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltButton.m; sourceTree = "<group>"; };
+		BE0F081D1C29FFE900509B0F /* CobaltFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltFont.h; sourceTree = "<group>"; };
+		BE0F081E1C29FFE900509B0F /* CobaltFontManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltFontManager.h; sourceTree = "<group>"; };
+		BE0F081F1C29FFE900509B0F /* CobaltFontManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltFontManager.m; sourceTree = "<group>"; };
+		BE0F08201C29FFE900509B0F /* CobaltPluginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltPluginManager.h; sourceTree = "<group>"; };
+		BE0F08211C29FFE900509B0F /* CobaltPluginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltPluginManager.m; sourceTree = "<group>"; };
+		BE0F08221C29FFE900509B0F /* CobaltToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltToast.h; sourceTree = "<group>"; };
+		BE0F08231C29FFE900509B0F /* CobaltToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltToast.m; sourceTree = "<group>"; };
+		BE0F08241C29FFE900509B0F /* CobaltViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CobaltViewController.h; sourceTree = "<group>"; };
+		BE0F08251C29FFE900509B0F /* CobaltViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltViewController.m; sourceTree = "<group>"; };
+		BE0F08261C29FFE900509B0F /* CobaltViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CobaltViewController.xib; sourceTree = "<group>"; };
+		BE0F08281C29FFE900509B0F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE0F08291C29FFE900509B0F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		BE0F082A1C29FFE900509B0F /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		BE0F082B1C29FFE900509B0F /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
+		BE0F082C1C29FFE900509B0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0F082D1C29FFE900509B0F /* iToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iToast.h; sourceTree = "<group>"; };
+		BE0F082E1C29FFE900509B0F /* iToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iToast.m; sourceTree = "<group>"; };
+		BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Cobalt.xcodeproj; sourceTree = "<group>"; };
+		BE0F08331C29FFE900509B0F /* CobaltTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CobaltTests.m; sourceTree = "<group>"; };
+		BE0F08341C29FFE900509B0F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE0F08351C29FFE900509B0F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		BE0F08561C2A00B500509B0F /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = www/common; sourceTree = "<group>"; };
+		BE0F08571C2A00B500509B0F /* platform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = platform; path = www/platform; sourceTree = "<group>"; };
+		BEFE12C11C29FC60006FF4C7 /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE12C51C29FC60006FF4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEFE12C71C29FC60006FF4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEFE12CA1C29FC60006FF4C7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BEFE12CB1C29FC60006FF4C7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BEFE12CE1C29FC60006FF4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEFE12D01C29FC60006FF4C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEFE12D31C29FC60006FF4C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEFE12D51C29FC60006FF4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFE12DA1C29FC60006FF4C7 /* SideMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE12DE1C29FC60006FF4C7 /* SideMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideMenuTests.m; sourceTree = "<group>"; };
+		BEFE12E01C29FC60006FF4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFE12E51C29FC60006FF4C7 /* SideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFE12E91C29FC60006FF4C7 /* SideMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideMenuUITests.m; sourceTree = "<group>"; };
+		BEFE12EB1C29FC60006FF4C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEFE12BE1C29FC60006FF4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE12D71C29FC60006FF4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE12E21C29FC60006FF4C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE0F080B1C29FFBC00509B0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F080C1C29FFE900509B0F /* Cobalt */,
+			);
+			name = Frameworks;
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		BE0F080C1C29FFE900509B0F /* Cobalt */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F080D1C29FFE900509B0F /* .gitignore */,
+				BE0F080E1C29FFE900509B0F /* Cobalt */,
+				BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */,
+				BE0F08321C29FFE900509B0F /* CobaltTests */,
+				BE0F08351C29FFE900509B0F /* LICENSE */,
+			);
+			path = Cobalt;
+			sourceTree = SOURCE_ROOT;
+		};
+		BE0F080E1C29FFE900509B0F /* Cobalt */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F080F1C29FFE900509B0F /* BackBarButtonItem.h */,
+				BE0F08101C29FFE900509B0F /* BackBarButtonItem.m */,
+				BE0F08111C29FFE900509B0F /* backButton.png */,
+				BE0F08121C29FFE900509B0F /* backButton@2x.png */,
+				BE0F08131C29FFE900509B0F /* backButton@3x.png */,
+				BE0F08141C29FFE900509B0F /* Cobalt-Prefix.pch */,
+				BE0F08151C29FFE900509B0F /* Cobalt.h */,
+				BE0F08161C29FFE900509B0F /* Cobalt.m */,
+				BE0F08171C29FFE900509B0F /* CobaltAbstractPlugin.h */,
+				BE0F08181C29FFE900509B0F /* CobaltAbstractPlugin.m */,
+				BE0F08191C29FFE900509B0F /* CobaltBarButtonItem.h */,
+				BE0F081A1C29FFE900509B0F /* CobaltBarButtonItem.m */,
+				BE0F081B1C29FFE900509B0F /* CobaltButton.h */,
+				BE0F081C1C29FFE900509B0F /* CobaltButton.m */,
+				BE0F081D1C29FFE900509B0F /* CobaltFont.h */,
+				BE0F081E1C29FFE900509B0F /* CobaltFontManager.h */,
+				BE0F081F1C29FFE900509B0F /* CobaltFontManager.m */,
+				BE0F08201C29FFE900509B0F /* CobaltPluginManager.h */,
+				BE0F08211C29FFE900509B0F /* CobaltPluginManager.m */,
+				BE0F08221C29FFE900509B0F /* CobaltToast.h */,
+				BE0F08231C29FFE900509B0F /* CobaltToast.m */,
+				BE0F08241C29FFE900509B0F /* CobaltViewController.h */,
+				BE0F08251C29FFE900509B0F /* CobaltViewController.m */,
+				BE0F08261C29FFE900509B0F /* CobaltViewController.xib */,
+				BE0F08271C29FFE900509B0F /* Localizable.strings */,
+				BE0F082A1C29FFE900509B0F /* ImageManager.h */,
+				BE0F082B1C29FFE900509B0F /* ImageManager.m */,
+				BE0F082C1C29FFE900509B0F /* Info.plist */,
+				BE0F082D1C29FFE900509B0F /* iToast.h */,
+				BE0F082E1C29FFE900509B0F /* iToast.m */,
+			);
+			path = Cobalt;
+			sourceTree = "<group>";
+		};
+		BE0F08301C29FFE900509B0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F084E1C29FFE900509B0F /* Cobalt.framework */,
+				BE0F08501C29FFE900509B0F /* CobaltTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE0F08321C29FFE900509B0F /* CobaltTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F08331C29FFE900509B0F /* CobaltTests.m */,
+				BE0F08341C29FFE900509B0F /* Info.plist */,
+			);
+			path = CobaltTests;
+			sourceTree = "<group>";
+		};
+		BE0F08521C2A005F00509B0F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12C71C29FC60006FF4C7 /* AppDelegate.h */,
+				BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BE0F08531C2A006A00509B0F /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */,
+				BEFE12D01C29FC60006FF4C7 /* Assets.xcassets */,
+				BEFE12D21C29FC60006FF4C7 /* LaunchScreen.storyboard */,
+			);
+			name = Design;
+			sourceTree = "<group>";
+		};
+		BE0F08541C2A008400509B0F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12CA1C29FC60006FF4C7 /* ViewController.h */,
+				BEFE12CB1C29FC60006FF4C7 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		BE0F08551C2A00A000509B0F /* www */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F08561C2A00B500509B0F /* common */,
+				BE0F08571C2A00B500509B0F /* platform */,
+			);
+			name = www;
+			sourceTree = "<group>";
+		};
+		BEFE12B81C29FC60006FF4C7 = {
+			isa = PBXGroup;
+			children = (
+				BEFE12C31C29FC60006FF4C7 /* SideMenu */,
+				BE0F080B1C29FFBC00509B0F /* Frameworks */,
+				BEFE12DD1C29FC60006FF4C7 /* SideMenuTests */,
+				BEFE12E81C29FC60006FF4C7 /* SideMenuUITests */,
+				BEFE12C21C29FC60006FF4C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEFE12C21C29FC60006FF4C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12C11C29FC60006FF4C7 /* SideMenu.app */,
+				BEFE12DA1C29FC60006FF4C7 /* SideMenuTests.xctest */,
+				BEFE12E51C29FC60006FF4C7 /* SideMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEFE12C31C29FC60006FF4C7 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BE0F08551C2A00A000509B0F /* www */,
+				BE0F08521C2A005F00509B0F /* AppDelegate */,
+				BE0F08541C2A008400509B0F /* Controllers */,
+				BE0F08531C2A006A00509B0F /* Design */,
+				BEFE12C41C29FC60006FF4C7 /* Supporting Files */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		BEFE12C41C29FC60006FF4C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12D51C29FC60006FF4C7 /* Info.plist */,
+				BEFE12C51C29FC60006FF4C7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEFE12DD1C29FC60006FF4C7 /* SideMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12DE1C29FC60006FF4C7 /* SideMenuTests.m */,
+				BEFE12E01C29FC60006FF4C7 /* Info.plist */,
+			);
+			path = SideMenuTests;
+			sourceTree = "<group>";
+		};
+		BEFE12E81C29FC60006FF4C7 /* SideMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEFE12E91C29FC60006FF4C7 /* SideMenuUITests.m */,
+				BEFE12EB1C29FC60006FF4C7 /* Info.plist */,
+			);
+			path = SideMenuUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEFE12C01C29FC60006FF4C7 /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE12EE1C29FC60006FF4C7 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				BEFE12BD1C29FC60006FF4C7 /* Sources */,
+				BEFE12BE1C29FC60006FF4C7 /* Frameworks */,
+				BEFE12BF1C29FC60006FF4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = BEFE12C11C29FC60006FF4C7 /* SideMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEFE12D91C29FC60006FF4C7 /* SideMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE12F11C29FC60006FF4C7 /* Build configuration list for PBXNativeTarget "SideMenuTests" */;
+			buildPhases = (
+				BEFE12D61C29FC60006FF4C7 /* Sources */,
+				BEFE12D71C29FC60006FF4C7 /* Frameworks */,
+				BEFE12D81C29FC60006FF4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFE12DC1C29FC60006FF4C7 /* PBXTargetDependency */,
+			);
+			name = SideMenuTests;
+			productName = SideMenuTests;
+			productReference = BEFE12DA1C29FC60006FF4C7 /* SideMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEFE12E41C29FC60006FF4C7 /* SideMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFE12F41C29FC60006FF4C7 /* Build configuration list for PBXNativeTarget "SideMenuUITests" */;
+			buildPhases = (
+				BEFE12E11C29FC60006FF4C7 /* Sources */,
+				BEFE12E21C29FC60006FF4C7 /* Frameworks */,
+				BEFE12E31C29FC60006FF4C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFE12E71C29FC60006FF4C7 /* PBXTargetDependency */,
+			);
+			name = SideMenuUITests;
+			productName = SideMenuUITests;
+			productReference = BEFE12E51C29FC60006FF4C7 /* SideMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEFE12B91C29FC60006FF4C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Cobaltians;
+				TargetAttributes = {
+					BEFE12C01C29FC60006FF4C7 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					BEFE12D91C29FC60006FF4C7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BEFE12C01C29FC60006FF4C7;
+					};
+					BEFE12E41C29FC60006FF4C7 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = BEFE12C01C29FC60006FF4C7;
+					};
+				};
+			};
+			buildConfigurationList = BEFE12BC1C29FC60006FF4C7 /* Build configuration list for PBXProject "SideMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+			);
+			mainGroup = BEFE12B81C29FC60006FF4C7;
+			productRefGroup = BEFE12C21C29FC60006FF4C7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BE0F08301C29FFE900509B0F /* Products */;
+					ProjectRef = BE0F082F1C29FFE900509B0F /* Cobalt.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				BEFE12C01C29FC60006FF4C7 /* SideMenu */,
+				BEFE12D91C29FC60006FF4C7 /* SideMenuTests */,
+				BEFE12E41C29FC60006FF4C7 /* SideMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BE0F084E1C29FFE900509B0F /* Cobalt.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Cobalt.framework;
+			remoteRef = BE0F084D1C29FFE900509B0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BE0F08501C29FFE900509B0F /* CobaltTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CobaltTests.xctest;
+			remoteRef = BE0F084F1C29FFE900509B0F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEFE12BF1C29FC60006FF4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE0F08581C2A00B500509B0F /* common in Resources */,
+				BE0F083A1C29FFE900509B0F /* backButton@3x.png in Resources */,
+				BE0F08361C29FFE900509B0F /* .gitignore in Resources */,
+				BE0F08391C29FFE900509B0F /* backButton@2x.png in Resources */,
+				BEFE12D41C29FC60006FF4C7 /* LaunchScreen.storyboard in Resources */,
+				BE0F08441C29FFE900509B0F /* Localizable.strings in Resources */,
+				BE0F08381C29FFE900509B0F /* backButton.png in Resources */,
+				BE0F084A1C29FFE900509B0F /* LICENSE in Resources */,
+				BE0F08431C29FFE900509B0F /* CobaltViewController.xib in Resources */,
+				BEFE12D11C29FC60006FF4C7 /* Assets.xcassets in Resources */,
+				BE0F08491C29FFE900509B0F /* Info.plist in Resources */,
+				BE0F08461C29FFE900509B0F /* Info.plist in Resources */,
+				BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */,
+				BE0F08591C2A00B500509B0F /* platform in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE12D81C29FC60006FF4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE12E31C29FC60006FF4C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEFE12BD1C29FC60006FF4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE12CC1C29FC60006FF4C7 /* ViewController.m in Sources */,
+				BE0F083D1C29FFE900509B0F /* CobaltBarButtonItem.m in Sources */,
+				BE0F083E1C29FFE900509B0F /* CobaltButton.m in Sources */,
+				BE0F08401C29FFE900509B0F /* CobaltPluginManager.m in Sources */,
+				BE0F08481C29FFE900509B0F /* CobaltTests.m in Sources */,
+				BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */,
+				BE0F08421C29FFE900509B0F /* CobaltViewController.m in Sources */,
+				BE0F083F1C29FFE900509B0F /* CobaltFontManager.m in Sources */,
+				BE0F08451C29FFE900509B0F /* ImageManager.m in Sources */,
+				BE0F083B1C29FFE900509B0F /* Cobalt.m in Sources */,
+				BE0F08471C29FFE900509B0F /* iToast.m in Sources */,
+				BE0F083C1C29FFE900509B0F /* CobaltAbstractPlugin.m in Sources */,
+				BEFE12C61C29FC60006FF4C7 /* main.m in Sources */,
+				BE0F08411C29FFE900509B0F /* CobaltToast.m in Sources */,
+				BE0F08371C29FFE900509B0F /* BackBarButtonItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE12D61C29FC60006FF4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE12DF1C29FC60006FF4C7 /* SideMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFE12E11C29FC60006FF4C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFE12EA1C29FC60006FF4C7 /* SideMenuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEFE12DC1C29FC60006FF4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFE12C01C29FC60006FF4C7 /* SideMenu */;
+			targetProxy = BEFE12DB1C29FC60006FF4C7 /* PBXContainerItemProxy */;
+		};
+		BEFE12E71C29FC60006FF4C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFE12C01C29FC60006FF4C7 /* SideMenu */;
+			targetProxy = BEFE12E61C29FC60006FF4C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE0F08271C29FFE900509B0F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE0F08281C29FFE900509B0F /* en */,
+				BE0F08291C29FFE900509B0F /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFE12CE1C29FC60006FF4C7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEFE12D21C29FC60006FF4C7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFE12D31C29FC60006FF4C7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEFE12EC1C29FC60006FF4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEFE12ED1C29FC60006FF4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEFE12EF1C29FC60006FF4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SideMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cobaltians.SideMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEFE12F01C29FC60006FF4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SideMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cobaltians.SideMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEFE12F21C29FC60006FF4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SideMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cobaltians.SideMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideMenu.app/SideMenu";
+			};
+			name = Debug;
+		};
+		BEFE12F31C29FC60006FF4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SideMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cobaltians.SideMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideMenu.app/SideMenu";
+			};
+			name = Release;
+		};
+		BEFE12F51C29FC60006FF4C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SideMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cobaltians.SideMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SideMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BEFE12F61C29FC60006FF4C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SideMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cobaltians.SideMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SideMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEFE12BC1C29FC60006FF4C7 /* Build configuration list for PBXProject "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE12EC1C29FC60006FF4C7 /* Debug */,
+				BEFE12ED1C29FC60006FF4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE12EE1C29FC60006FF4C7 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE12EF1C29FC60006FF4C7 /* Debug */,
+				BEFE12F01C29FC60006FF4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE12F11C29FC60006FF4C7 /* Build configuration list for PBXNativeTarget "SideMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE12F21C29FC60006FF4C7 /* Debug */,
+				BEFE12F31C29FC60006FF4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFE12F41C29FC60006FF4C7 /* Build configuration list for PBXNativeTarget "SideMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFE12F51C29FC60006FF4C7 /* Debug */,
+				BEFE12F61C29FC60006FF4C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEFE12B91C29FC60006FF4C7 /* Project object */;
+}
