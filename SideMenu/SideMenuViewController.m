@@ -1,14 +1,12 @@
 //
 //  SideMenuViewController.m
-//  Cobaltians
+//  SideMenu
 //
 //  Created by Sébastien Vitard on 22/12/2015.
 //  Copyright © 2015 Cobaltians. All rights reserved.
 //
 
 #import "SideMenuViewController.h"
-
-#import "Cobalt.h"
 
 #define MENU_WIDTH      100
 #define SLIDE_TIMING    0.25
@@ -41,14 +39,12 @@
     [_closeMenuGestureRecognizer setNumberOfTapsRequired:1];
     
     // Setup view
-    [DefaultViewController setDelegate:self];
-    
     [self setMenu];
     [self setNavController];
     
     _viewControllersForIdentifier = [NSMutableDictionary dictionaryWithCapacity:1];
     [self setViewControllersForIdentifier:@"home"
-                           withController:@"default"
+                           withController:@"withSidemenu"
                                  withPage:@"home.html"
                                   andData:nil];
 }
@@ -115,14 +111,24 @@
     }
     
     UIViewController *topViewController = [_navigationController topViewController];
-    [_navigationController.view addGestureRecognizer:_dragMenuGestureRecognizer];
-    if (_menuVisible) {
-        [_navigationController.view addGestureRecognizer:_closeMenuGestureRecognizer];
-        if (topViewController != nil) {
-            [topViewController.view setUserInteractionEnabled:NO];
+    if (_menuEnabled) {
+        [_navigationController.view addGestureRecognizer:_dragMenuGestureRecognizer];
+        
+        if (_menuVisible) {
+            [_navigationController.view addGestureRecognizer:_closeMenuGestureRecognizer];
+            if (topViewController != nil) {
+                [topViewController.view setUserInteractionEnabled:NO];
+            }
+        }
+        else {
+            [_navigationController.view removeGestureRecognizer:_closeMenuGestureRecognizer];
+            if (topViewController != nil) {
+                [topViewController.view setUserInteractionEnabled:YES];
+            }
         }
     }
     else {
+        [_navigationController.view removeGestureRecognizer:_dragMenuGestureRecognizer];
         [_navigationController.view removeGestureRecognizer:_closeMenuGestureRecognizer];
         if (topViewController != nil) {
             [topViewController.view setUserInteractionEnabled:YES];
@@ -136,22 +142,12 @@
                                 andData:(NSDictionary *)data {
     NSArray *viewControllers = [_viewControllersForIdentifier objectForKey:identifier];
     if (viewControllers == nil) {
-        DefaultViewController *viewController = (DefaultViewController *)[Cobalt cobaltViewControllerForController:controller
-                                                                                                           andPage:page];
+        RootViewController *viewController = (RootViewController *)[Cobalt cobaltViewControllerForController:controller
+                                                                                                     andPage:page];
+        [viewController setMenuToggleDelegate:self];
         if (data != nil) {
             viewController.pushedData = data;
         }
-        
-        UIBarButtonItem *sideMenuBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sidemenu"]
-                                                                                  style:UIBarButtonItemStylePlain
-                                                                                 target:self
-                                                                                 action:@selector(toggleMenu)];
-        [sideMenuBarButtonItem setTintColor:[UIColor colorWithRed:0
-                                                            green:0.36
-                                                             blue:0.41
-                                                            alpha:1]];
-        [viewController.navigationItem setLeftBarButtonItem:sideMenuBarButtonItem
-                                                   animated:YES];
         
         viewControllers = [NSArray arrayWithObject:viewController];
         
@@ -172,13 +168,18 @@
 
 - (void)setMenu {
     if (_menuViewController == nil) {
-        _menuViewController = (DefaultViewController *)[Cobalt cobaltViewControllerForController:@"default"
-                                                                                         andPage:@"sidemenu.html"];
+        [AbstractViewController setMenuEnableDelegate:self];
+        
+        _menuViewController = (MenuViewController *)[Cobalt cobaltViewControllerForController:@"menu"
+                                                                                      andPage:@"sidemenu.html"];
+        [_menuViewController setMenuSwitchDelegate:self];
+        
         [self addChildViewController:_menuViewController];
         [_menuViewController didMoveToParentViewController:self];
         
         [self.view addSubview:_menuViewController.view];
         
+        _menuEnabled = YES;
         _menuVisible = NO;
     }
     
@@ -230,6 +231,12 @@
                              [self setNavController];
                          }
                      }];
+}
+
+- (void)setMenuEnabled:(BOOL)enabled {
+    _menuEnabled = enabled;
+    
+    [self setNavController];
 }
 
 - (void)switchNavigationController:(NSString *)identifier

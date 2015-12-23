@@ -28,11 +28,14 @@
 		BE0F084A1C29FFE900509B0F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08351C29FFE900509B0F /* LICENSE */; };
 		BE0F08581C2A00B500509B0F /* common in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08561C2A00B500509B0F /* common */; };
 		BE0F08591C2A00B500509B0F /* platform in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08571C2A00B500509B0F /* platform */; };
-		BE0F085E1C2A048500509B0F /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085B1C2A048500509B0F /* DefaultViewController.m */; };
+		BE0F085E1C2A048500509B0F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085B1C2A048500509B0F /* MenuViewController.m */; };
 		BE0F085F1C2A048500509B0F /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085D1C2A048500509B0F /* SideMenuViewController.m */; };
 		BE0F08651C2A835200509B0F /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08621C2A835200509B0F /* sidemenu.png */; };
 		BE0F08661C2A835200509B0F /* sidemenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08631C2A835200509B0F /* sidemenu@2x.png */; };
 		BE0F08671C2A835200509B0F /* sidemenu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08641C2A835200509B0F /* sidemenu@3x.png */; };
+		BE312EB51C2ADB8600FC6C95 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE312EB41C2ADB8600FC6C95 /* RootViewController.m */; };
+		BE312EBA1C2ADBDC00FC6C95 /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE312EB91C2ADBDC00FC6C95 /* DefaultViewController.m */; };
+		BE312EBD1C2AE0FD00FC6C95 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE312EBC1C2AE0FD00FC6C95 /* AbstractViewController.m */; };
 		BEFE12C61C29FC60006FF4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C51C29FC60006FF4C7 /* main.m */; };
 		BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */; };
 		BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */; };
@@ -110,13 +113,19 @@
 		BE0F08351C29FFE900509B0F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		BE0F08561C2A00B500509B0F /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = www/common; sourceTree = "<group>"; };
 		BE0F08571C2A00B500509B0F /* platform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = platform; path = www/platform; sourceTree = "<group>"; };
-		BE0F085A1C2A048500509B0F /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
-		BE0F085B1C2A048500509B0F /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		BE0F085A1C2A048500509B0F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		BE0F085B1C2A048500509B0F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		BE0F085C1C2A048500509B0F /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
 		BE0F085D1C2A048500509B0F /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
 		BE0F08621C2A835200509B0F /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
 		BE0F08631C2A835200509B0F /* sidemenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidemenu@2x.png"; sourceTree = "<group>"; };
 		BE0F08641C2A835200509B0F /* sidemenu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidemenu@3x.png"; sourceTree = "<group>"; };
+		BE312EB31C2ADB8600FC6C95 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		BE312EB41C2ADB8600FC6C95 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		BE312EB81C2ADBDC00FC6C95 /* DefaultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultViewController.h; sourceTree = "<group>"; };
+		BE312EB91C2ADBDC00FC6C95 /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
+		BE312EBB1C2AE0FD00FC6C95 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		BE312EBC1C2AE0FD00FC6C95 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		BEFE12C11C29FC60006FF4C7 /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE12C51C29FC60006FF4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEFE12C71C29FC60006FF4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -251,8 +260,14 @@
 			children = (
 				BE0F085C1C2A048500509B0F /* SideMenuViewController.h */,
 				BE0F085D1C2A048500509B0F /* SideMenuViewController.m */,
-				BE0F085A1C2A048500509B0F /* DefaultViewController.h */,
-				BE0F085B1C2A048500509B0F /* DefaultViewController.m */,
+				BE312EBB1C2AE0FD00FC6C95 /* AbstractViewController.h */,
+				BE312EBC1C2AE0FD00FC6C95 /* AbstractViewController.m */,
+				BE0F085A1C2A048500509B0F /* MenuViewController.h */,
+				BE0F085B1C2A048500509B0F /* MenuViewController.m */,
+				BE312EB31C2ADB8600FC6C95 /* RootViewController.h */,
+				BE312EB41C2ADB8600FC6C95 /* RootViewController.m */,
+				BE312EB81C2ADBDC00FC6C95 /* DefaultViewController.h */,
+				BE312EB91C2ADBDC00FC6C95 /* DefaultViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -495,10 +510,12 @@
 			files = (
 				BE0F083D1C29FFE900509B0F /* CobaltBarButtonItem.m in Sources */,
 				BE0F083E1C29FFE900509B0F /* CobaltButton.m in Sources */,
+				BE312EB51C2ADB8600FC6C95 /* RootViewController.m in Sources */,
 				BE0F08401C29FFE900509B0F /* CobaltPluginManager.m in Sources */,
+				BE312EBD1C2AE0FD00FC6C95 /* AbstractViewController.m in Sources */,
 				BE0F085F1C2A048500509B0F /* SideMenuViewController.m in Sources */,
 				BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */,
-				BE0F085E1C2A048500509B0F /* DefaultViewController.m in Sources */,
+				BE0F085E1C2A048500509B0F /* MenuViewController.m in Sources */,
 				BE0F08421C29FFE900509B0F /* CobaltViewController.m in Sources */,
 				BE0F083F1C29FFE900509B0F /* CobaltFontManager.m in Sources */,
 				BE0F08451C29FFE900509B0F /* ImageManager.m in Sources */,
@@ -507,6 +524,7 @@
 				BE0F083C1C29FFE900509B0F /* CobaltAbstractPlugin.m in Sources */,
 				BEFE12C61C29FC60006FF4C7 /* main.m in Sources */,
 				BE0F08411C29FFE900509B0F /* CobaltToast.m in Sources */,
+				BE312EBA1C2ADBDC00FC6C95 /* DefaultViewController.m in Sources */,
 				BE0F08371C29FFE900509B0F /* BackBarButtonItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
