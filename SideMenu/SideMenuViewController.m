@@ -142,6 +142,17 @@
             viewController.pushedData = data;
         }
         
+        UIBarButtonItem *sideMenuBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"sidemenu"]
+                                                                                  style:UIBarButtonItemStylePlain
+                                                                                 target:self
+                                                                                 action:@selector(toggleMenu)];
+        [sideMenuBarButtonItem setTintColor:[UIColor colorWithRed:0
+                                                            green:0.36
+                                                             blue:0.41
+                                                            alpha:1]];
+        [viewController.navigationItem setLeftBarButtonItem:sideMenuBarButtonItem
+                                                   animated:YES];
+        
         viewControllers = [NSArray arrayWithObject:viewController];
         
         [_viewControllersForIdentifier setObject:viewControllers
@@ -155,6 +166,7 @@
     
     [_navigationController setViewControllers:viewControllers
                                      animated:NO];
+    
     _viewControllersSelected = identifier;
 }
 

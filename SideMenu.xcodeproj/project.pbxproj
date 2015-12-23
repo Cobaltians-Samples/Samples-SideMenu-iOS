@@ -30,6 +30,9 @@
 		BE0F08591C2A00B500509B0F /* platform in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08571C2A00B500509B0F /* platform */; };
 		BE0F085E1C2A048500509B0F /* DefaultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085B1C2A048500509B0F /* DefaultViewController.m */; };
 		BE0F085F1C2A048500509B0F /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085D1C2A048500509B0F /* SideMenuViewController.m */; };
+		BE0F08651C2A835200509B0F /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08621C2A835200509B0F /* sidemenu.png */; };
+		BE0F08661C2A835200509B0F /* sidemenu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08631C2A835200509B0F /* sidemenu@2x.png */; };
+		BE0F08671C2A835200509B0F /* sidemenu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08641C2A835200509B0F /* sidemenu@3x.png */; };
 		BEFE12C61C29FC60006FF4C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C51C29FC60006FF4C7 /* main.m */; };
 		BEFE12C91C29FC60006FF4C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFE12C81C29FC60006FF4C7 /* AppDelegate.m */; };
 		BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */; };
@@ -111,6 +114,9 @@
 		BE0F085B1C2A048500509B0F /* DefaultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultViewController.m; sourceTree = "<group>"; };
 		BE0F085C1C2A048500509B0F /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
 		BE0F085D1C2A048500509B0F /* SideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideMenuViewController.m; sourceTree = "<group>"; };
+		BE0F08621C2A835200509B0F /* sidemenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sidemenu.png; sourceTree = "<group>"; };
+		BE0F08631C2A835200509B0F /* sidemenu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidemenu@2x.png"; sourceTree = "<group>"; };
+		BE0F08641C2A835200509B0F /* sidemenu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidemenu@3x.png"; sourceTree = "<group>"; };
 		BEFE12C11C29FC60006FF4C7 /* SideMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFE12C51C29FC60006FF4C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEFE12C71C29FC60006FF4C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -233,6 +239,9 @@
 				BEFE12CD1C29FC60006FF4C7 /* Main.storyboard */,
 				BEFE12D01C29FC60006FF4C7 /* Assets.xcassets */,
 				BEFE12D21C29FC60006FF4C7 /* LaunchScreen.storyboard */,
+				BE0F08621C2A835200509B0F /* sidemenu.png */,
+				BE0F08631C2A835200509B0F /* sidemenu@2x.png */,
+				BE0F08641C2A835200509B0F /* sidemenu@3x.png */,
 			);
 			name = Design;
 			sourceTree = "<group>";
@@ -447,9 +456,11 @@
 				BE0F08581C2A00B500509B0F /* common in Resources */,
 				BE0F083A1C29FFE900509B0F /* backButton@3x.png in Resources */,
 				BE0F08361C29FFE900509B0F /* .gitignore in Resources */,
+				BE0F08661C2A835200509B0F /* sidemenu@2x.png in Resources */,
 				BE0F08391C29FFE900509B0F /* backButton@2x.png in Resources */,
 				BEFE12D41C29FC60006FF4C7 /* LaunchScreen.storyboard in Resources */,
 				BE0F08441C29FFE900509B0F /* Localizable.strings in Resources */,
+				BE0F08671C2A835200509B0F /* sidemenu@3x.png in Resources */,
 				BE0F08381C29FFE900509B0F /* backButton.png in Resources */,
 				BE0F084A1C29FFE900509B0F /* LICENSE in Resources */,
 				BE0F08431C29FFE900509B0F /* CobaltViewController.xib in Resources */,
@@ -457,6 +468,7 @@
 				BE0F08461C29FFE900509B0F /* Info.plist in Resources */,
 				BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */,
 				BE0F08591C2A00B500509B0F /* platform in Resources */,
+				BE0F08651C2A835200509B0F /* sidemenu.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
