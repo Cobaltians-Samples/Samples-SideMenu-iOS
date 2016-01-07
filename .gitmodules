@@ -1,7 +1,3 @@
-[submodule "Cobalt"]
-	path = Cobalt
-	url = git@github.com:cobaltians/Cobalt-iOS.git
-	branch = dev-nativeBars
 [submodule "SideMenu/www/platform"]
 	path = SideMenu/www/platform
 	url = git@github.com:cobaltians/Cobalt-Web-iOS.git
