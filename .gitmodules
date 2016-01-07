@@ -2,3 +2,10 @@
 	path = Cobalt
 	url = https://github.com/cobaltians/Cobalt-iOS.git
 	branch = dev-nativeBars
+[submodule "SideMenu/www/platform"]
+	path = SideMenu/www/platform
+	url = https://github.com/cobaltians/Cobalt-Web-iOS.git
+	branch = develop
+[submodule "SideMenu/www/common"]
+	path = SideMenu/www/common
+	url = https://github.com/Cobaltians-Samples/Samples-SideMenu-Web.git
