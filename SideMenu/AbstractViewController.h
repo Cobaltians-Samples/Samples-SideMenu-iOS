@@ -6,7 +6,7 @@
 //  Copyright © 2015 Cobaltians. All rights reserved.
 //
 
-#import "Cobalt.h"
+#import <Cobalt/Cobalt.h>
 
 @protocol MenuEnableDelegate <NSObject>
 

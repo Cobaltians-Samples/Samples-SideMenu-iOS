@@ -10,7 +10,7 @@
 
 #import "SideMenuViewController.h"
 
-#import "Cobalt.h"
+#import <Cobalt/Cobalt.h>
 
 @interface AppDelegate ()
 
