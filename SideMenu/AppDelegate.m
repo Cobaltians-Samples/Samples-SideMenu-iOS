@@ -24,12 +24,6 @@
     NSString *resourcePath = [NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] resourcePath], @"/common/"];
     [Cobalt setResourcePath:resourcePath];
     
-    SideMenuViewController *viewController = [[SideMenuViewController alloc] init];
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = viewController;
-    self.window.backgroundColor = [UIColor clearColor];
-    [self.window makeKeyAndVisible];
-    
     [[NSNotificationCenter defaultCenter] postNotificationName:kOnAppStarted object:nil];
     
     return YES;

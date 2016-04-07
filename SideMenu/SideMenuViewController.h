@@ -14,10 +14,13 @@
 @interface SideMenuViewController : UIViewController <UIGestureRecognizerDelegate, MenuEnableDelegate, MenuSwitchDelegate, MenuToggleDelegate>
 
 @property (strong, nonatomic) UINavigationController *navigationController;
+@property (strong, nonatomic) NSLayoutConstraint *navigationControllerAlignLeading;
 @property (strong, nonatomic) NSMutableDictionary *viewControllersForIdentifier;
 @property (strong, nonatomic) NSString *viewControllersSelected;
 @property (strong, nonatomic) UIPanGestureRecognizer *dragMenuGestureRecognizer;
 @property (strong, nonatomic) UITapGestureRecognizer *closeMenuGestureRecognizer;
+@property (strong, nonatomic) IBOutlet UIView *menuContainer;
+@property (strong, nonatomic) NSLayoutConstraint *menuContainerWidth;
 @property (strong, nonatomic) MenuViewController *menuViewController;
 @property (assign, nonatomic) BOOL menuEnabled;
 @property (assign, nonatomic) BOOL menuVisible;
