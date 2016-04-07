@@ -25,16 +25,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    // Setup view
-    //TODO: delete
-
-    /*
-    [self setViewControllersForIdentifier:@"home"
-                           withController:@"withSidemenu"
-                                 withPage:@"home.html"
-                                  andData:nil];
-     */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -109,7 +99,7 @@
 
 - (void)initRootViewController {
     RootViewController *rootViewController = (RootViewController *) _navigationController.topViewController;
-    [rootViewController initWithPage:@"index.html"
+    [rootViewController initWithPage:@"home.html"
                        andController:@"home"];
     [rootViewController setMenuToggleDelegate:self];
     
