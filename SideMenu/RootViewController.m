@@ -28,10 +28,7 @@
                                                                               style:UIBarButtonItemStylePlain
                                                                              target:_menuToggleDelegate
                                                                              action:@selector(toggleMenu)];
-    [sideMenuBarButtonItem setTintColor:[UIColor colorWithRed:0
-                                                        green:0.36
-                                                         blue:0.41
-                                                        alpha:1]];
+    
     [self.navigationItem setLeftBarButtonItem:sideMenuBarButtonItem
                                      animated:YES];
 }
