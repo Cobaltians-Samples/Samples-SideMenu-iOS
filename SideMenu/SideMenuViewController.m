@@ -146,7 +146,7 @@
                                                                                                      andPage:page];
         [viewController setMenuToggleDelegate:self];
         if (data != nil) {
-            viewController.pushedData = data;
+            viewController.navigationData = data;
         }
         
         viewControllers = [NSArray arrayWithObject:viewController];
