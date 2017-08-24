@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BE0F08581C2A00B500509B0F /* common in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08561C2A00B500509B0F /* common */; };
-		BE0F08591C2A00B500509B0F /* platform in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08571C2A00B500509B0F /* platform */; };
 		BE0F085E1C2A048500509B0F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085B1C2A048500509B0F /* MenuViewController.m */; };
 		BE0F085F1C2A048500509B0F /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE0F085D1C2A048500509B0F /* SideMenuViewController.m */; };
 		BE0F08651C2A835200509B0F /* sidemenu.png in Resources */ = {isa = PBXBuildFile; fileRef = BE0F08621C2A835200509B0F /* sidemenu.png */; };
@@ -48,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		BE0F08561C2A00B500509B0F /* common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = common; path = www/common; sourceTree = "<group>"; };
-		BE0F08571C2A00B500509B0F /* platform */ = {isa = PBXFileReference; lastKnownFileType = folder; name = platform; path = www/platform; sourceTree = "<group>"; };
 		BE0F085A1C2A048500509B0F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		BE0F085B1C2A048500509B0F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		BE0F085C1C2A048500509B0F /* SideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideMenuViewController.h; sourceTree = "<group>"; };
@@ -159,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				BE0F08561C2A00B500509B0F /* common */,
-				BE0F08571C2A00B500509B0F /* platform */,
 			);
 			name = www;
 			sourceTree = "<group>";
@@ -345,7 +342,6 @@
 				BE956EC61C47F8CF002DBEE3 /* LICENSE in Resources */,
 				BEFE12D11C29FC60006FF4C7 /* Assets.xcassets in Resources */,
 				BEFE12CF1C29FC60006FF4C7 /* Main.storyboard in Resources */,
-				BE0F08591C2A00B500509B0F /* platform in Resources */,
 				BE0F08651C2A835200509B0F /* sidemenu.png in Resources */,
 				BE956EC41C47F8CF002DBEE3 /* Cobalt.bundle in Resources */,
 			);
