@@ -16,7 +16,7 @@
 
 @end
 
-@interface AbstractViewController : CobaltViewController <CobaltDelegate>
+@interface AbstractViewController : CobaltViewController
 
 + (id<MenuEnableDelegate>)menuEnableDelegate;
 + (void)setMenuEnableDelegate:(id<MenuEnableDelegate>)delegate;

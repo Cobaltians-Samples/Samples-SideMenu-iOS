@@ -1,3 +1,7 @@
 [submodule "SideMenu/www/common"]
 	path = SideMenu/www/common
 	url = https://github.com/Cobaltians-Samples/Samples-SideMenu-Web.git
+[submodule "Cobalt-iOS"]
+	path = Cobalt-iOS
+	url = https://github.com/cobaltians/Cobalt-iOS.git
+	branch = cobalt1.0

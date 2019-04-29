@@ -7,6 +7,7 @@
 //
 
 #import "AbstractViewController.h"
+#import <Cobalt/PubSub.h>
 
 @protocol MenuSwitchDelegate <NSObject>
 
@@ -19,7 +20,7 @@
 
 @end
 
-@interface MenuViewController : AbstractViewController
+@interface MenuViewController : AbstractViewController <PubSubDelegate>
 
 @property (weak, nonatomic) id<MenuSwitchDelegate> menuSwitchDelegate;
 

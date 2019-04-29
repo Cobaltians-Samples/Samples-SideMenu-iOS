@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import <Cobalt/PubSub.h>
 
 @interface MenuViewController ()
 
@@ -20,36 +21,42 @@
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-- (BOOL)onUnhandledEvent:(NSString *)event
-                withData:(NSDictionary *)data
-             andCallback:(NSString *)callback {
-    if ([@"sidemenu:switch" isEqualToString:event]
-        && data != nil && [data isKindOfClass:[NSDictionary class]]) {
-        id identifier = [data objectForKey:@"id"];
-        id controller = [data objectForKey:@"controller"];
-        id page = [data objectForKey:@"page"];
-        id innerData = [data objectForKey:@"data"];
-        
-        if (identifier != nil && [identifier isKindOfClass:[NSString class]]
-            && controller != nil && [controller isKindOfClass:[NSString class]]
-            && page != nil && [page isKindOfClass:[NSString class]]
-            && (innerData == nil || [innerData isKindOfClass:[NSDictionary class]])) {
-            if (_menuSwitchDelegate != nil) {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [_menuSwitchDelegate switchNavigationController:identifier
-                                                     withController:controller
-                                                           withPage:page
-                                                            andData:innerData];
-                });
-            }
-        }
-        
-        return true;
-    }
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     
-    return [super onUnhandledEvent:event
-                          withData:data
-                       andCallback:callback];
+    PubSub *pubsub = [PubSub sharedInstance];
+    [pubsub subscribeDelegate:self
+                    toChannel:@"sidemenu:switch"];
+    
+}
+
+- (void)didReceiveMessage:(nullable NSDictionary *)message
+                onChannel:(nonnull NSString *)channel {
+    if ([channel isEqualToString:@"sidemenu:switch"]) {
+        if (message != nil && [message isKindOfClass:[NSDictionary class]]) {
+            
+            id identifier = [message objectForKey:@"id"];
+            id controller = [message objectForKey:@"controller"];
+            id page = [message objectForKey:@"page"];
+            id innerData = [message objectForKey:@"data"];
+            
+            if (identifier != nil && [identifier isKindOfClass:[NSString class]]
+                && controller != nil && [controller isKindOfClass:[NSString class]]
+                && page != nil && [page isKindOfClass:[NSString class]]
+                && (innerData == nil || [innerData isKindOfClass:[NSDictionary class]])) {
+                if (_menuSwitchDelegate != nil) {
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [_menuSwitchDelegate switchNavigationController:identifier
+                                                         withController:controller
+                                                               withPage:page
+                                                                andData:innerData];
+                    });
+                }
+            }
+            
+        }
+    }
 }
 
 @end
