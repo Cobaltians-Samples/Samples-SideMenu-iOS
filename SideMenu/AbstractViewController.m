@@ -26,7 +26,7 @@ static __weak id<MenuEnableDelegate> menuEnableDelegate;
     [super viewDidLoad];
     
     // Do any additional setup after loading the view.
-    [self setDelegate:self];
+    // [self setDelegate:self];
     
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0
                                                                         green:0.36
